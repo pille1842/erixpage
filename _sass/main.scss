@@ -1,0 +1,141 @@
+$bg: #1D1E22;
+$bg-code: #333;
+$fg: #ddd;
+$fg-superlight: #22B300;
+$fg-highlight: #4BFF00;
+$fg-lowlight: #777;
+
+body {
+    background: $bg;
+    color: $fg;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+}
+
+a {
+    color: $fg-highlight;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: $fg-superlight;
+}
+
+p {
+    line-height: 150%;
+    text-align: justify;
+}
+
+#main {
+    max-width: 970px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.current {
+    color: $fg-lowlight !important;
+}
+
+.navbar {
+    li {
+        display: inline;
+        list-style-type: none;
+        padding-left: 20px;
+    }
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+        font-size: 30px;
+        font-family: 'Roboto Mono', monospace;
+
+        a, a:hover {
+            text-decoration: none;
+            color: $fg !important;
+        }
+    }
+
+    nav {
+        padding-top: 5px;
+    }
+}
+
+#footer {
+    border-top: 2px solid $fg;
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    nav {
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 0 20px 0 0;
+        }
+    }
+}
+
+#license {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: $fg-highlight;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: $fg-highlight;
+    }
+}
+
+.blog {
+    padding: 0;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $fg;
+        padding: 10px 0;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-location {
+    text-align: right;
+    font-style: italic;
+}
+
+figure.highlight {
+    margin: 0;
+
+    pre {
+        padding: 10px;
+        background: $bg-code;
+    }
+}

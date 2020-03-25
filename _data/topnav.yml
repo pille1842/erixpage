@@ -1,0 +1,4 @@
+- name: Startseite
+  link: /
+- name: Blog
+  link: /blog.html

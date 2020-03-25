@@ -1,0 +1,6 @@
+- name: Impressum
+  link: /impressum.html
+- name: Datenschutz
+  link: /datenschutz.html
+- name: Kontakt
+  link: /kontakt.html

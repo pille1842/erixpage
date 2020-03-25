@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link href="/assets/css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div class="title">
+                    <a href="/">erixpage.de</a><span class="blinking-cursor">|</span>
+                </div>
+                {% include topnav.html %}
+            </div>
+            {{ content }}
+            <div id="footer">
+                {% include bottomnav.html %}
+                <div>
+                    Copyright &copy; {{ 'now' | date: "%Y" }} Eric Haberstroh
+                </div>
+            </div>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                <br>
+                Dieses Werk ist lizenziert unter einer
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" rel="nofollow">Creative Commons Namensnennung 4.0 International Lizenz</a>.
+            </div>
+        </div>
+    </body>
+</html>
