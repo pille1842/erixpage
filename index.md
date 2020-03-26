@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Willkommen auf Erixpage.de!
 ---
 
 # Willkommen!
